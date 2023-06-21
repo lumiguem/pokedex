@@ -1,5 +1,6 @@
 import { list } from "postcss"
-import PokemonCard from "../components/pokedex/Pokemoncard"
+import PokemonCard from "../components/pokedex/PokemonCard"
+
 
 const PokemonsList = ({pokemons}) => {
   
@@ -8,7 +9,6 @@ const PokemonsList = ({pokemons}) => {
     
     <section className="grid gap-4 grid-cols-[repeat(auto-fill,_280px)] justify-center max-w-[1200px] mx-auto py-6 ">
       
-
         {
             pokemons.map(pokemon => <PokemonCard key={pokemon.url} pokemonUrl ={pokemon.url}/>)
         }
